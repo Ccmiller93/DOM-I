@@ -1,6 +1,6 @@
 const siteContent = {
   "nav": {
-    "nav-item-1": "Services",
+    "nav-item-2": "Services",
     "nav-item-2": "Product",
     "nav-item-3": "Vision",
     "nav-item-4": "Features",
@@ -40,3 +40,73 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let ctaImg = document.querySelector('#cta-img');
+ctaImg.src = 'img/header-img.png'
+
+let midImg = document.querySelector('#middle-img')
+midImg.src = 'img/mid-page-accent.jpg'
+
+let nav = document.querySelector('nav')
+let links = nav
+let link1 = links.querySelector('a:nth-of-type(1)')
+link1.textContent = 'Services'
+
+let link2 = links.querySelector('a:nth-of-type(2)')
+
+link2.textContent = 'Products'
+
+let link3 = links.querySelector('a:nth-of-type(3)')
+link3.textContent = 'Vision'
+
+let link4 = links.querySelector('a:nth-of-type(4)')
+link4.textContent = 'Features'
+
+let link5 = links.querySelector('a:nth-of-type(5)')
+link5.textContent = 'About'
+
+let link6 = links.querySelector('a:nth-of-type(6)')
+link6.textContent = 'Contact'
+
+let navBar = links.querySelector('a')
+navBar.style.color = 'green';
+
+
+let featureH4 = document.querySelector(".text-content:nth-of-type(1) h4");
+featureH4.textContent = siteContent["main-content"]["features-h4"];
+
+let featureP = document.querySelector(".text-content:nth-of-type(1) p");
+featureP.textContent = siteContent["main-content"]["features-content"];
+
+let aboutH4 = document.querySelector(".text-content:nth-of-type(2) h4");
+aboutH4.textContent = siteContent["main-content"]["about-h4"];
+
+let aboutP = document.querySelector(".text-content:nth-of-type(2) p");
+aboutP.textContent = siteContent["main-content"]["about-content"];
+
+let servicesH4 = document.querySelector(".text-content:nth-of-type(3) h4");
+servicesH4.textContent = siteContent["main-content"]["services-h4"];
+
+let servicesP = document.querySelector(".text-content:nth-of-type(3) p");
+servicesP.textContent = siteContent["main-content"]["services-content"];
+
+let productP = document.querySelector(".text-content:nth-of-type(4) p");
+servicesP.textContent = siteContent["main-content"]["product-content"];
+
+// let productH4 = document.querySelector(".text-content:nth-of-type(4) h4");
+// productH4.textContent = siteContent["main-content"]["product-h4"];
+
+// let productsP = document.querySelector(".text-content:nth-of-type(4) p");
+// productsP.textContent = siteContent["main-content"]["product-content"];
+
+// let visionH4 = document.querySelector(".text-content:nth-of-type(5) h4");
+// visionH4.textContent = siteContent["main-content"]["vision-h4"];
+
+// let visionP = document.querySelector(".text-content:nth-of-type(5) p");
+// visionP.textContent = siteContent["main-content"]["vision-content"];
+
+let mainContent = document.querySelectorAll('.text-content h4')
+
+mainContent[5] = siteContent["main-content"]["vision-h4"];
+console.log("mainContent[5]", mainContent[5]);
+
