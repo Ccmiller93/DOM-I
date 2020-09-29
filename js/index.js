@@ -110,3 +110,5 @@ let mainContent = document.querySelectorAll('.text-content h4')
 mainContent[5] = siteContent["main-content"]["vision-h4"];
 console.log("mainContent[5]", mainContent[5]);
 
+image.classList.toggle('.bar')
+<img id="image" src="cat.jpg" class="foo" />
